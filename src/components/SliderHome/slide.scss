@@ -1,0 +1,21 @@
+.main__wrapper-slider {
+  width: 100vw;
+  overflow: hidden;
+  margin-left: -12px;
+}
+
+.slider-container {
+  display: flex;
+  width: max-content;
+}
+
+.slider-item {
+  width: auto;
+  width: inherit;
+  img {
+    width: 100vw;
+    height: auto;
+
+    transform: translateX(-18%);
+  }
+}

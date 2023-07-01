@@ -5,6 +5,6 @@ import('./styles.scss')
   .catch((error) => {
     console.log('Ошибока при загрузке стилей', error)
   })
-import navMenu from './BurgerMenu/js/navMenu'
+import navMenu from './components/BurgerMenu/js/navMenu'
 
 navMenu()

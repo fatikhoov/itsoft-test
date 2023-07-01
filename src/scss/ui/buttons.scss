@@ -13,16 +13,24 @@
 
   color: #fff;
   text-align: center;
-  font-size: 12px;
+
   font-family: Roboto;
   font-style: normal;
-  font-weight: 500;
   line-height: 16px;
   &:hover {
     span {
       opacity: 0.7;
     }
   }
+}
+
+.s-btn {
+  font-size: 12px;
+  font-weight: 500;
+}
+.m-btn {
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .button-burger-open {
@@ -36,7 +44,7 @@
     opacity: 0.7;
   }
   .menu-logo {
-    width: 32px;
-    height: auto;
+    width: inherit;
+    height: inherit;
   }
 }
