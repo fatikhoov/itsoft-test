@@ -1,6 +1,6 @@
+$color-brand: #5b0e58;
+
 .button-where-buy {
-  width: 79px;
-  height: 27px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,12 +25,26 @@
 }
 
 .s-btn {
+  width: 79px;
+  height: 27px;
   font-size: 12px;
   font-weight: 500;
 }
 .m-btn {
+  width: 132px;
+  height: 34px;
   font-size: 14px;
   font-weight: 400;
+}
+
+.brand-color-btn {
+  color: $color-brand;
+  border: 1px solid $color-brand;
+  background: #fff;
+  align-self: center;
+  &:last-child {
+    margin-top: 1px;
+  }
 }
 
 .button-burger-open {
