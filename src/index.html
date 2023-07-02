@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="ВЕНАРУС" />
+    <meta name="keywords" content="ВЕНАРУС" />
+    <title>ВЕНАРУС</title>
   </head>
   <body>
     <header class="header__wrapper">
@@ -18,7 +20,16 @@
           <div class="button-where-buy s-btn"><span>Где купить</span></div>
 
           <div class="button-burger-open">
-            <img class="menu-logo" src="./images/menu.svg" alt="Меню сайта" />
+            <img
+              class="menu-logo menu-logo-1"
+              src="./images/menu.svg"
+              alt="Меню сайта"
+            />
+            <img
+              class="menu-logo menu-logo-2 menu-logo-close"
+              src="./images/menu-close.svg"
+              alt="Меню сайта"
+            />
           </div>
         </div>
       </section>
@@ -89,6 +100,26 @@
       <div class="button-where-buy m-btn brand-color-btn">
         <span>Где купить&nbsp;</span> <span>></span>
       </div>
+      <ul class="main__wrapper-btn-bar">
+        <li class="main__wrapper-btn-bar-item">
+          <a href="#">
+            <img src="./images/navbar1.svg" alt="Схема приема" />
+            <span> Схема приема</span></a
+          >
+        </li>
+        <li class="main__wrapper-btn-bar-item">
+          <a href="#">
+            <img src="./images/navbar2.svg" alt="Инструкция" />
+            <span> Инструкция</span>
+          </a>
+        </li>
+        <li class="main__wrapper-btn-bar-item">
+          <a href="#">
+            <img src="./images/navbar3.svg" alt="Где купить" />
+            <span> Где купить</span></a
+          >
+        </li>
+      </ul>
     </main>
 
     <aside class="footer__wrapper">
@@ -102,14 +133,74 @@
     </aside>
 
     <nav class="nav__wrapper">
-      <div class="button-burger-open">
-        <img class="menu-logo" src="./images/menu.svg" alt="Меню сайта" />
-      </div>
-      <!-- Здесь находится ваше раскрывающееся бургер-меню -->
       <ul class="burger-menu">
-        <li><a href="#">Ссылка 1</a></li>
-        <li><a href="#">Ссылка 2</a></li>
-        <li><a href="#">Ссылка 3</a></li>
+        <li class="burger-menu-item">
+          <a class="burger-menu-item-link burger-menu-item-link-active" href="#"
+            >Где купить</a
+          >
+          <img
+            class="media-mobile"
+            src="./images/menuLines/line1.svg"
+            alt="menu link border line"
+          />
+          <img
+            class="media-desktop"
+            src="./images/menuLines/desktopline1.svg"
+            alt="menu link border line"
+          />
+        </li>
+        <li class="burger-menu-item">
+          <a class="burger-menu-item-link" href="#">О препарате</a>
+          <img
+            class="media-mobile"
+            src="./images/menuLines/line2.svg"
+            alt="menu link border line"
+          />
+          <img
+            class="media-desktop"
+            src="./images/menuLines/desktopline2.svg"
+            alt="menu link border line"
+          />
+        </li>
+        <li class="burger-menu-item">
+          <a class="burger-menu-item-link" href="#">О варикозе</a>
+          <img
+            class="media-mobile"
+            src="./images/menuLines/line3.svg"
+            alt="menu link border line"
+          />
+          <img
+            class="media-desktop"
+            src="./images/menuLines/desktopline3.svg"
+            alt="menu link border line"
+          />
+        </li>
+        <li class="burger-menu-item">
+          <a class="burger-menu-item-link" href="#">Решение</a>
+          <img
+            class="media-mobile"
+            src="./images/menuLines/line4.svg"
+            alt="menu link border line"
+          />
+          <img
+            class="media-desktop"
+            src="./images/menuLines/desktopline4.svg"
+            alt="menu link border line"
+          />
+        </li>
+        <li class="burger-menu-item">
+          <a class="burger-menu-item-link" href="#">Специалистам</a>
+          <img
+            class="media-mobile"
+            src="./images/menuLines/line5.svg"
+            alt="menu link border line"
+          />
+          <img
+            class="media-desktop"
+            src="./images/menuLines/desktopline5.svg"
+            alt="menu link border line"
+          />
+        </li>
       </ul>
     </nav>
   </body>

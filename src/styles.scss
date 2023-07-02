@@ -143,14 +143,50 @@ li {
   .media-desktop {
     display: none;
   }
+  .main__wrapper-btn-bar {
+    display: none;
+  }
 }
 
 @media (min-width: $layout-breakpoint-small) {
+  .main__wrapper-btn-bar {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: -200px;
+    padding-left: 150px;
+    &-item {
+      width: fit-content;
+      a {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        color: #590d56;
+      }
+    }
+    &-item:hover {
+      opacity: 0.7;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .nav__wrapper {
+    padding-top: 110px;
+  }
+  .burger-menu {
+    padding-top: 114px;
+  }
+  .burger-menu-item-link {
+    padding: 20px 0 82px 150px;
+  }
+
   .media-mobile {
     display: none;
   }
   .header__wrapper,
-  .nav__wrapper,
   .main__wrapper {
     padding: 0;
   }
@@ -160,6 +196,7 @@ li {
     left: 0;
     right: 0;
     bottom: auto;
+    background: #fff;
   }
   .header__wrapper-nav {
     padding: 32px 150px;
@@ -186,7 +223,7 @@ li {
   .main__wrapper {
     width: 100%;
     min-height: 800px;
-    margin-top: 110px;
+    margin: 110px 0;
     background-image: url('./images/background-decktop.jpg');
     background-size: auto;
     background-position: top right;
@@ -263,5 +300,11 @@ li {
   }
   .active {
     z-index: 10;
+  }
+  .button-burger-open {
+    .menu-logo {
+      width: 66px;
+      height: 66px;
+    }
   }
 }

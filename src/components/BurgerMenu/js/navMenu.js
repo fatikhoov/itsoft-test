@@ -5,6 +5,15 @@ const navMenu = () => {
   const eventburgerMenu = (event) => {
     event.preventDefault()
     burgerMenu.classList.toggle('nav__wrapper-open')
+    if (burgerMenu.classList.contains('nav__wrapper-open')) {
+      document.body.style.overflow = 'hidden'
+      document.querySelector('.menu-logo-1').classList.add('menu-logo-close')
+      document.querySelector('.menu-logo-2').classList.remove('menu-logo-close')
+    } else {
+      document.body.style.overflow = ''
+      document.querySelector('.menu-logo-2').classList.add('menu-logo-close')
+      document.querySelector('.menu-logo-1').classList.remove('menu-logo-close')
+    }
   }
   const eventDisclamerClose = (event) => {
     event.preventDefault()
